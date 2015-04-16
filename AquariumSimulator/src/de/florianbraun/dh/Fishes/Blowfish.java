@@ -1,4 +1,4 @@
-package de.florianbraun.dh;
+package de.florianbraun.dh.Fishes;
 
 /**
  * Created by flo on 15.04.15.

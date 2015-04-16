@@ -1,4 +1,4 @@
-package de.florianbraun.dh;
+package de.florianbraun.dh.Fishes;
 
 import java.util.Random;
 
@@ -50,6 +50,10 @@ public abstract class Fish {
 
     }
 
+    public void MoveControlled(int Width,int Height,int direction){
+
+    }
+
     public void Move(int Width,int Height){
 
         Random rand = new Random();
@@ -75,27 +79,27 @@ public abstract class Fish {
 
     }
 
-    private boolean MoveLeft(int dist) {
+    protected boolean MoveLeft(int dist) {
         if(this.x- dist <0)return false;
         this.x -= dist;
         this.direction=1;
         return true;
     }
 
-    private boolean MoveRight(int dist,int Width) {
+    protected boolean MoveRight(int dist,int Width) {
         if(this.x+ dist +length +1>Width)return false;
         this.x += dist;
         this.direction=0;
         return true;
     }
 
-    private boolean MoveUp() {
+    protected boolean MoveUp() {
         if(this.y-1<1)return false;
         this.y -=1;
         return true;
     }
 
-    private boolean MoveDown(int Height) {
+    protected boolean MoveDown(int Height) {
         if(this.y+3>Height)return false;
         this.y +=1;
         return true;

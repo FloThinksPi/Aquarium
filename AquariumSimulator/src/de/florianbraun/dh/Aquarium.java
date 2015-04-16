@@ -1,5 +1,7 @@
 package de.florianbraun.dh;
 
+import de.florianbraun.dh.Fishes.Fish;
+
 import java.util.ArrayList;
 
 /**
