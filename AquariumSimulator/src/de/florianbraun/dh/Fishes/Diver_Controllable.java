@@ -5,9 +5,9 @@ import java.util.Scanner;
 /**
  * Created by flo on 16.04.15.
  */
-public class Controllable_Fish extends Fish {
+public class Diver_Controllable extends Fish {
 
-    public Controllable_Fish(int speed, int x, int y) {
+    public Diver_Controllable(int speed, int x, int y) {
         super(speed, x, y);
         this.length=4;
         this.visualLeft ="O<>=";

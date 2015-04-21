@@ -12,25 +12,13 @@ public abstract class Fish {
 
     public Fish(int speed,int x,int y) {
         this.MaxSpeed = speed;
+        length = speed;
         this.x=x;
         this.y=y;
     }
 
-
-    public int getMaxSpeed() {
-        return MaxSpeed;
-    }
-
     public int getLength() {
         return length;
-    }
-
-    public String getVisualLeft() {
-        return visualLeft;
-    }
-
-    public double getLevelchange() {
-        return levelchange;
     }
 
     public int getX() {
@@ -50,8 +38,7 @@ public abstract class Fish {
 
     }
 
-    public void MoveControlled(int Width,int Height,int direction){
-
+    public void MoveControlled(int Width, int Height, int direction){
     }
 
     public void Move(int Width,int Height){
@@ -87,7 +74,7 @@ public abstract class Fish {
     }
 
     protected boolean MoveRight(int dist,int Width) {
-        if(this.x+ dist +length +1>Width)return false;
+        if(this.x+ dist +length>Width-3)return false;
         this.x += dist;
         this.direction=0;
         return true;
