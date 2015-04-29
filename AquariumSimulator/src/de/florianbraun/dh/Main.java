@@ -10,11 +10,15 @@ import java.util.*;
 
 public class Main {
 
-    private static int WIDTH=142,HEIGHT=40,SPEED=120;
-    private static final String ANSI_CLS = "\u001b[2J";
-    private static final String ANSI_HOME = "\u001b[H";
+    private static int WIDTH=50,HEIGHT=10,SPEED=120;//Standart Werte
+    private static String ANSI_CLS = "\u001b[2J";///Geht nur unter Linux/UNIX(Clear + Return)
+    private static String ANSI_HOME = "\u001b[H";///Geht nur unter Linux/UNIX(Clear + Return)
 
     public static void main(String[] args) throws InterruptedException, AWTException {
+
+        if(System.getProperty("os.name").toLowerCase().contains("win")){
+            ANSI_CLS="";ANSI_HOME="";//Geht nur unter Linux/UNIX(Clear + Return)
+        }
 
         System.out.print(ANSI_CLS+ANSI_HOME);
 

@@ -3,7 +3,7 @@ package de.florianbraun.dh.Fishes;
 /**
  * Created by flo on 15.04.15.
  */
-public class Carp extends Fish{
+public final class Carp extends Fish{
 
 
     public Carp(int speed, int x, int y) {
