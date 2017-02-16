@@ -4,6 +4,8 @@ A java programm that displays a aquarium with a controllable fish in a terminal 
 
 Study project, we had to do this ... :/
 
+![Imgur down ?](http://i.imgur.com/I3VRphm.png)
+
 # BSD 2-clause License
 
 Copyright (c) 2015, FloThinksPi
